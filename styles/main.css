@@ -331,8 +331,9 @@ body {
 /* Fun Facts Section */
 .fun-facts-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
   padding: 50px 100px;
   background-color: #1e1e2f;
 }
@@ -391,10 +392,11 @@ body {
 /* Skills Section */
 .skills-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 50px 100px;
   background-color: #f9f9f9;
+  gap: 2rem;
 }
 
 .skills-content {
@@ -499,16 +501,19 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+  gap: 20rem;
+  justify-content: center;
 }
 
 /* Footer Column Styling */
 .footer-column {
   flex: 1;
   min-width: 200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer-logo {
