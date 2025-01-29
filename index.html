@@ -1,270 +1,233 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Build smarter with AI solutions" />
-    <title>Abdulla Al Mahin</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/variable.css" />
+    <!-- ?internal-links? -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/var.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
+
+    <!-- ?internal-links? -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulla Al Mahin - Web Developer & Graphic Designer</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">Abdulla</div>
+    <!-- *navigation* -->
+    <header>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <img src="#" alt="Abdulla Al Mahin Logo" />
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
       </nav>
+      <div class="nav-buttons">
+        <button class="login">Log in</button>
+        <button class="REGISTER">Get Started</button>
+      </div>
     </header>
+    <main>
+      <!-- *Hero Section* -->
+      <section class="hero">
+        <div class="hero-left">
+          <h3>
+            Welcome!
+            <h2>I'm Abdulla Al Mahin</h2>
+            <p>
+              A passionate Web Developer & Creative Graphic Designer dedicated
+              to building intuitive and visually compelling digital experiences.
+            </p>
+          </h3>
 
-    <section class="hero" id="home">
-      <section class="hero-left">
-        <h2>hello world</h2>
-        <h1>Abdulla al mahin</h1>
-        <h4>Web Developer</h4>
-        <button class="hello">SAY HELLO</button>
-      </section>
-      <section class="hero-right">
-        <img
-          src="https://avatars.githubusercontent.com/u/182164170?v=4"
-          alt="hero-image
-        "
-        />
+          <div class="hero-btn">
+            <button class="connect">
+              <a href="https://www.linkedin.com/in/icwmahin/" target="_blank"
+                >Connect on LinkedIn</a
+              >
+            </button>
+            <a href="#" target="_blank">
+              <button class="play">
+                <i class="fa-regular fa-circle-play"></i>
+              </button>
+            </a>
+          </div>
 
-        <div class="social-links">
-          <a href="#">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <div class="mini-icon">
+            <ol>
+              <li>Front-End Development</li>
+              <li>UI/UX Design</li>
+            </ol>
+          </div>
         </div>
-      </section>
-    </section>
 
-    <section class="cards">
-      <div class="card">
-        <i class="fa-solid fa-bolt"></i>
-        <h2>Dedication</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-          eligendi?
-        </p>
-      </div>
-      <div class="card">
-        <i class="fa-solid fa-brain"></i>
-        <h2>Smart Work</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-          eligendi?
-        </p>
-      </div>
-      <div class="card">
-        <i class="fa-solid fa-handshake"></i>
-        <h2>Collaboration</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-          eligendi?
-        </p>
-      </div>
-      <div class="card">
-        <i class="fa-solid fa-microchip"></i>
-        <h2>Technology</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-          eligendi?
-        </p>
-      </div>
-    </section>
-
-    <!-- about me section -->
-    <div class="container">
-      <div class="cardAbout">
-        <div class="left">
+        <div class="hero-right">
           <img
             src="https://avatars.githubusercontent.com/u/182164170?v=4"
-            alt="Profile Image"
-            class="profile-img"
+            alt="Abdulla Al Mahin"
           />
+        </div>
+      </section>
 
-          <div class="download">
-            <span>Download My CV</span>
+      <!-- *features section* -->
+
+      <section class="features">
+        <h4 class="sub-heading">MY SERVICES</h4>
+        <h2 class="main-heading">What I Offer</h2>
+
+        <div class="features-container">
+          <div class="feature-card">
+            <div class="icon">
+              <span class="shape"></span>
+            </div>
+            <h3>Custom Web Development</h3>
+            <a href="#" class="arrow-link">→</a>
+          </div>
+
+          <div class="feature-card highlighted">
+            <div class="icon">
+              <span class="shape"></span>
+            </div>
+            <h3>Brand Identity & UI/UX Design</h3>
+            <a href="#" class="learn-more">LEARN MORE</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">
+              <span class="shape"></span>
+            </div>
+            <h3>SEO Optimization & Performance</h3>
+            <a href="#" class="arrow-link">→</a>
           </div>
         </div>
-        <div class="right">
-          <h2>ABOUT ME</h2>
-          <h1>I Explore The World Of Web</h1>
-          <p>
-            Hello there, I am a developer. If you want to know more about me,
-            then I am a web developer. I am skilled enough in WordPress,
-            Elementor, HTML, CSS, and cPanel to build or develop your
-            professional portfolio, e-commerce website, business website, blog,
-            personal website, charity website, entertainment, news, job boards,
-            forum, education website, blog, and many more! With my 5 years of
-            experience, I can give you 100 percent satisfaction with my work. I
-            just won't stop till my client is 100% satisfied. Send me a text,
-            and we could work forever too!
-          </p>
-          <ul>
-            <li><strong>Name:</strong> Abdulla Al Mahin</li>
-            <li><strong>Age:</strong> 19 Years</li>
-            <li><strong>Occupation:</strong> Web Developer</li>
-            <li><strong>Phone:</strong> +880 1854333256</li>
-            <li><strong>Email:</strong> icwmahin@gmail.com</li>
-            <li><strong>Nationality:</strong> Bangladeshi</li>
-          </ul>
-          <div class="signature">
-            <p>Abdulla</p>
-            <span>Freelance Web Developer</span>
+      </section>
+
+      <!-- *testimonial-section* -->
+      <section class="testimonial-section">
+        <div class="testimonial-left">
+          <div class="testimonial">
+            <img src="user1.jpg" alt="User 1" />
+            <div class="testimonial-content">
+              <h4>Emily Carter</h4>
+              <p>
+                Working with Abdulla has been an amazing experience. His
+                creativity in design and development exceeded expectations.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="user2.jpg" alt="User 2" />
+            <div class="testimonial-content">
+              <h4>Jason Mitchell</h4>
+              <p>
+                Abdulla’s expertise in front-end development helped bring our
+                brand to life with a stunning website.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="user3.jpg" alt="User 3" />
+            <div class="testimonial-content">
+              <h4>Sophia Lee</h4>
+              <p>
+                His design skills transformed our company's visual identity into
+                something truly impactful.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- funfact section -->
-    <div class="fun-facts-section">
-      <div class="content">
-        <h3>FUN FACTS</h3>
-        <h1>I am lazy, That's why i make web Faster</h1>
+        <div class="testimonial-right">
+          <img src="mentor.jpg" alt="Creative Work" />
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h2>Stay Updated with My Work</h2>
         <p>
-          Making website with HTML, CSS, JAVASCRIPT & REACT is fun. Minimal
-          website make more sence then the fancy website. that's why i build the
-          most minimalistic website with premium look's.
+          Subscribe to get insights on web development, design trends, and my
+          latest projects.
         </p>
-      </div>
-      <div class="facts">
-        <div class="fact">
-          <h2>3</h2>
-          <p>Years of Experience</p>
-        </div>
-        <div class="fact">
-          <h2>120+</h2>
-          <p>Total Clients</p>
-        </div>
-        <div class="fact">
-          <h2>300+</h2>
-          <p>Projects Completed</p>
-        </div>
-        <div class="fact">
-          <h2>10</h2>
-          <p>Digital Products</p>
-        </div>
-      </div>
-    </div>
+        <form>
+          <input type="email" placeholder="Enter your email here" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </section>
+    </main>
+    <!-- *footer section* -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Finegap</h4>
+            <ul>
+              <li><a href="">Tuorials</a></li>
+              <li><a href="">Programing</a></li>
+              <li><a href="">Development</a></li>
+              <li><a href="">Technology</a></li>
+            </ul>
+          </div>
 
-    <!-- skills -->
-    <section class="skills-section">
-      <div class="skills-content">
-        <h3>MY SKILL</h3>
-        <h1>Growing Over Times</h1>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis unde
-          omnis iste natus kobita tumi sopno charini hoye khbor nio na sit
-          voluptatem accusantium dolore.
-        </p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill">
-          <div class="circle" data-progress="80%">
-            <span>80%</span>
+          <!-- 2nd Column -->
+          <div class="footer-col">
+            <h4>Properties</h4>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact US</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Our History</a></li>
+            </ul>
           </div>
-          <p>Web Development</p>
-        </div>
-        <div class="skill">
-          <div class="circle" data-progress="95%">
-            <span>95%</span>
-          </div>
-          <p>Hardware Development</p>
-        </div>
-        <div class="skill">
-          <div class="circle" data-progress="90%">
-            <span>90%</span>
-          </div>
-          <p>Software Development</p>
-        </div>
-        <div class="skill">
-          <div class="circle" data-progress="75%">
-            <span>75%</span>
-          </div>
-          <p>System Application</p>
-        </div>
-        <div class="skill">
-          <div class="circle" data-progress="60%">
-            <span>60%</span>
-          </div>
-          <p>Project management</p>
-        </div>
-        <div class="skill">
-          <div class="circle" data-progress="85%">
-            <span>85%</span>
-          </div>
-          <p>Data Administration</p>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- First Column: Logo and Name -->
-        <div class="footer-column">
-          <h1 class="footer-logo">YourLogo</h1>
-          <p class="footer-description">
-            Building systems that work. Let's bring your ideas to life.
-          </p>
-        </div>
 
-        <!-- Second Column: Newsletter -->
-        <div class="footer-column">
-          <h3 class="footer-heading">Newsletter</h3>
-          <p>Subscribe to stay updated with the latest news.</p>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="newsletter-input"
-              required
-            />
-            <button type="submit" class="newsletter-button">Subscribe</button>
-          </form>
-        </div>
+          <!-- 3rd Column -->
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="">API Integration</a></li>
+              <li><a href="">Web Development</a></li>
+              <li><a href="">Mobile Development</a></li>
+            </ul>
+          </div>
 
-        <!-- Third Column: Social Icons -->
-        <div class="footer-column">
-          <h3 class="footer-heading">Follow Us</h3>
-          <div class="social-icons">
-            <a href="#" class="social-link" title="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-link" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
+          <!-- 3th Column -->
+
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form action="">
+              <input type="text" placeholder="Your Name" class="inputName" />
+              <input
+                type="email"
+                placeholder="Enter Company Email"
+                class="inputEmail"
+              />
+              <input type="submit" value="Submit" class="inputSubmit" />
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <p>&#169; 2022 Finegap. All Rights Reserved.</p>
+          </div>
+          <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
     </footer>
-
-    <script src="scripts/app.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
