@@ -1,10 +1,4 @@
-// Add smooth hover interactions
-document.querySelectorAll(".feature-item").forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    item.style.transform = "translateY(-5px)";
-  });
-
-  item.addEventListener("mouseout", () => {
-    item.style.transform = "translateY(0)";
-  });
-});
+function toggleMenu() {
+  const menu = document.querySelector("nav ul");
+  menu.classList.toggle("mobile-menu");
+}
