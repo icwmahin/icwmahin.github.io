@@ -1,10 +1,10 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
   background-color: var(--dark-bg);
   color: var(--light);
@@ -191,12 +191,6 @@ h2 {
   transition: 0.4s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .portfolio {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Experience Section */
 .exp-container {
   display: flex;
@@ -342,16 +336,6 @@ h2 {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-container {
-    gap: 1rem;
-  }
-
-  .skill-card {
-    width: 100px;
   }
 }
 
