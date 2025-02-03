@@ -1,3 +1,30 @@
+:root {
+  /* Color Variables */
+  --dark-bg: #0d0b14;
+  --primary: #a853fc;
+  --primary-light: #8953f7;
+  --primary-dark: #5c18b9;
+  --light-accent: #ece3fe;
+  --text-light: #dddddd;
+  --stats-bg: #170a22;
+  --stats-shadow: #3c1883;
+  --button-bg: #201530;
+  --section-title: #b49af5;
+  --portfolio-bg: #151021;
+  --card-bg: #1a0e2a;
+  --experience-accent: #a78bfa;
+  --skills-accent: #c084fc;
+  --skill-card-bg: #1a1a1a;
+  --contact-icon: #b794f4;
+  --contact-form-bg: #1e1e1e;
+  --form-input-bg: #292929;
+  --form-focus-bg: #343434;
+  --button-hover: #9a6be8;
+  --text-muted: #aaa;
+  --dark: #121212;
+  --light: #ffffff;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 /* 

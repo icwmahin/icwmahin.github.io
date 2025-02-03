@@ -3,55 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Global Styles */
 body {
-  background-color: #0d0b14;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--light);
   font-family: "Sora", serif;
-  /* font-optical-sizing: auto; */
   margin: 0;
   padding: 0;
 }
+
 main {
-  width: 69%;
+  width: 70%;
+  z-index: -10;
   margin: 0 auto;
-}
-header {
-  display: flex;
-  align-items: center;
-  padding: 20px 50px;
-  justify-content: space-around;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: large;
-}
-
-.hire-btn {
-  background: linear-gradient(135deg, #a853fc, #5c18b9);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.hire-btn:hover {
-  transition: all 0.5s ease-in-out;
-  background: linear-gradient(135deg, #5c18b9, #a853fc);
 }
 
 /* Hero Section */
@@ -65,27 +30,24 @@ nav ul li a {
 
 .hero-content {
   max-width: 500px;
-  color: #dddddd;
+  color: var(--text-light);
 }
+
 .hero-content > h2 {
   font-family: "Sora", serif;
   font-size: 2.25rem;
 }
-.hero-content > h2,
-h1,
-.download-cv,
-.social-icons {
-  margin-top: 0.5rem;
-}
+
 .hero h1 {
   font-size: 3.5em;
-  background: linear-gradient(to right, #8953f7, #ece3fe, #8953f7);
+  background: linear-gradient(
+    to right,
+    var(--primary-light),
+    var(--light-accent),
+    var(--primary-light)
+  );
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.hero h1 span {
-  color: #a853fc;
 }
 
 .hero p {
@@ -95,17 +57,17 @@ h1,
 
 .download-cv {
   background: transparent;
-  border: 2px solid #a853fc;
-  color: #a853fc;
+  border: 2px solid var(--primary);
+  color: var(--primary);
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 .download-cv:hover {
-  background: #a853fc;
-  color: #fff;
-  cursor: default;
+  background: var(--primary);
+  color: var(--light);
 }
 
 .donwn-hero {
@@ -113,23 +75,26 @@ h1,
   align-items: center;
   gap: 2rem;
 }
+
 .social-icons {
   display: flex;
   gap: 1rem;
   font-size: 25px;
 }
+
 .social-icons > i {
-  color: #8953f7;
+  color: var(--primary-light);
   transition: all 0.3s ease;
 }
+
 .social-icons > i:hover {
-  color: #fff;
+  color: var(--light);
   scale: 1.1;
 }
-/* Hero Image */
+
 .hero-image img {
   border-radius: 15px;
-  border: 3px solid #8953f7;
+  border: 3px solid var(--primary-light);
   padding: 0.5rem;
   rotate: 10deg;
   height: 400px;
@@ -141,59 +106,65 @@ h1,
   scale: 1.1;
 }
 
-/* --- */
+/* Stats Section */
 .dtls {
   margin: 2rem auto;
   width: 69%;
   font-family: Arial, sans-serif;
-  background-color: #170a22;
-  color: white;
+  background-color: var(--stats-bg);
+  color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10rem;
   border-radius: 12px;
-  box-shadow: 2px 2px 12px #3c1883;
+  box-shadow: 2px 2px 12px var(--stats-shadow);
 }
+
 .stats-container {
   display: flex;
   gap: 50px;
   text-align: center;
 }
+
 .stat {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 .desc {
   font-size: 1rem;
   opacity: 0.7;
 }
 
-/* *Project section * */
-
+/* Project Section */
 h2 {
   font-size: 2rem;
-  color: #b49af5;
+  color: var(--section-title);
 }
+
 .buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin: 20px 0;
 }
+
 .filter-btn {
-  background: #201530;
-  color: white;
+  background: var(--button-bg);
+  color: var(--light);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 20px;
   transition: 0.3s;
 }
+
 .filter-btn.active,
 .filter-btn:hover {
-  background: #b49af5;
+  background: var(--section-title);
 }
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -201,36 +172,37 @@ h2 {
   justify-content: center;
   margin-top: 20px;
 }
+
 .portfolio-item {
-  background: #151021;
+  background: var(--portfolio-bg);
   padding: 15px;
   border-radius: 10px;
   transition: 0.4s ease-in-out;
 }
+
 .portfolio-item img {
   width: 100%;
   border-radius: 8px;
 }
+
 .hidden {
   opacity: 0;
   transform: scale(0.9);
   transition: 0.4s ease-in-out;
 }
+
 @media (max-width: 768px) {
   .portfolio {
     grid-template-columns: 1fr;
   }
 }
 
-/* *exprieance*  */
+/* Experience Section */
 .exp-container {
   display: flex;
   justify-content: center;
   padding: 50px;
   gap: 1rem;
-}
-.experience-education {
-  padding: 50px 0;
 }
 
 .section-title {
@@ -241,7 +213,7 @@ h2 {
 .section-title h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #a78bfa;
+  color: var(--experience-accent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +228,7 @@ h2 {
 }
 
 .card {
-  background-color: #1a0e2a;
+  background-color: var(--card-bg);
   padding: 20px 30px;
   border-radius: 15px;
   text-align: left;
@@ -272,25 +244,25 @@ h2 {
 
 .card h4 {
   font-size: 1rem;
-  color: #a78bfa;
+  color: var(--experience-accent);
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .card h3 {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--light);
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .card p {
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--text-muted);
   font-weight: 500;
 }
-/* *skills section* */
 
+/* Skills Section */
 .skills-section {
   text-align: center;
   padding: 2rem;
@@ -300,13 +272,13 @@ h2 {
 .skills-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #c084fc;
+  color: var(--skills-accent);
   margin-bottom: 0.5rem;
 }
 
 .skills-section p {
   font-size: 1rem;
-  color: #b3b3b3;
+  color: var(--text-muted);
   margin-bottom: 2rem;
 }
 
@@ -318,7 +290,7 @@ h2 {
 }
 
 .skill-card {
-  background-color: #1a1a1a;
+  background-color: var(--skill-card-bg);
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -337,13 +309,13 @@ h2 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.5rem 0;
-  color: #fff;
+  color: var(--light);
 }
 
 .skill-card p {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #c084fc;
+  color: var(--skills-accent);
 }
 
 .skill-card:hover {
@@ -383,15 +355,7 @@ h2 {
   }
 }
 
-/* *contact form* */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
+/* Contact Form */
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -402,19 +366,19 @@ body {
 }
 
 .contact-form {
-  background-color: #1e1e1e;
+  background-color: var(--contact-form-bg);
   padding: 30px;
   border-radius: 10px;
   width: 60%;
 }
 
 .contact-form h2 {
-  color: #b794f4;
+  color: var(--contact-icon);
   margin-bottom: 10px;
 }
 
 .contact-form p {
-  color: #aaa;
+  color: var(--text-muted);
   margin-bottom: 20px;
 }
 
@@ -431,8 +395,8 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #292929;
-  color: white;
+  background-color: var(--form-input-bg);
+  color: var(--light);
   outline: none;
   transition: border 0.3s ease, background-color 0.3s ease;
 }
@@ -440,13 +404,13 @@ body {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border: 2px solid #b794f4;
-  background-color: #343434;
+  border: 2px solid var(--contact-icon);
+  background-color: var(--form-focus-bg);
 }
 
 .contact-form button {
-  background-color: #b794f4;
-  color: white;
+  background-color: var(--contact-icon);
+  color: var(--light);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -455,7 +419,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #9a6be8;
+  background-color: var(--button-hover);
   transform: scale(1.05);
 }
 
@@ -471,19 +435,20 @@ body {
 
 .contact-info div span {
   font-size: 20px;
-  color: #b794f4;
+  color: var(--contact-icon);
   margin-right: 10px;
 }
 
 .contact-info div p {
   margin: 0;
-  color: #aaa;
+  color: var(--text-muted);
 }
 
-/* *footer-section* */
+/* Footer Section */
 footer {
   margin-top: 2rem;
 }
+
 footer .container {
   border-radius: 12px 12px 0px 0px;
   background-color: var(--dark);
