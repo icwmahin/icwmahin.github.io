@@ -1,4 +1,38 @@
 /* Global Styles */
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  z-index: -10;
+}
+.circle {
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  animation: pop 0.5s linear;
+}
+
+@keyframes pop {
+  0% {
+    width: 100vw;
+    height: 100vw;
+    background-color: #000000;
+  }
+  80% {
+    background-color: #00000060;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
