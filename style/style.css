@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sora", serif;
+  font-family: "Chakra Petch", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {
   background-color: var(--dark-bg);
   color: var(--light);
-  font-family: "Sora", serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -23,24 +24,45 @@ main {
 
 /* Hero Section */
 .hero {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-  margin-top: 3rem;
-}
 
+  height: 100vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  filter: blur(200px);
+  z-index: -1;
+  bottom: 0;
+  background: url("../assets/image/hr.png");
+  background-size: 700px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
 .hero-content {
   max-width: 500px;
   color: var(--text-light);
 }
 
 .hero-content > h2 {
-  font-family: "Sora", serif;
-  font-size: 3.25rem;
+  font-family: "Chakra Petch", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 .hero h1 {
+  font-family: "Chakra Petch", serif;
+  font-weight: 900;
+  font-style: normal;
   font-size: 4.5em;
   background: linear-gradient(
     to right,
@@ -110,9 +132,8 @@ main {
 
 /* Stats Section */
 .dtls {
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 75%;
-  font-family: "Sora", serif;
   background-color: var(--stats-bg);
   color: var(--light);
   display: flex;
@@ -141,7 +162,8 @@ main {
 
 /* Project Section */
 .project {
-  margin: 5rem;
+  width: 70%;
+  margin: 10rem auto;
 }
 h2 {
   font-size: 3rem;
@@ -203,7 +225,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 50px;
-  gap: 1rem;
 }
 
 .section-title {
@@ -233,7 +254,7 @@ h2 {
   padding: 20px 30px;
   border-radius: 15px;
   text-align: left;
-  width: 500px;
+  width: 90%;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -292,10 +313,10 @@ h2 {
 
 .skill-card {
   background-color: var(--skill-card-bg);
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 24px;
+  padding-top: 3rem;
   text-align: center;
-  width: 120px;
+  width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideUp 0.8s ease forwards;
   opacity: 0;
@@ -441,7 +462,6 @@ footer > .container {
   margin-bottom: 25px;
   font-size: 22px;
   position: relative;
-  font-family: "Sora", serif;
 }
 
 .footer-col h4::before {
@@ -503,4 +523,9 @@ footer > .container {
 
 .row .socialIcons i:hover {
   color: var(--primary);
+}
+.inputName,
+.inputEmail,
+.inputSubmit {
+  border-radius: 6px;
 }

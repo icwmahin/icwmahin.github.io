@@ -24,12 +24,19 @@
     font-size: 1rem;
   }
   .hero-image img {
-    height: 250px;
-    margin: 20px;
+    height: 350px;
+    padding: 0.5em;
+    margin: 5rem;
+  }
+  .donwn-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Stats Section adjustments */
   .dtls {
+    margin-top: 20rem;
     width: 90%;
     flex-direction: column;
     height: auto;
