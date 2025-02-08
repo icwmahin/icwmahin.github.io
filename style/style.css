@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sora", serif;
 }
 
 body {
@@ -11,10 +12,11 @@ body {
   font-family: "Sora", serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 main {
-  width: 70%;
+  width: 100%;
   z-index: -10;
   margin: 0 auto;
 }
@@ -35,11 +37,11 @@ main {
 
 .hero-content > h2 {
   font-family: "Sora", serif;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to right,
     var(--primary-light),
@@ -97,7 +99,7 @@ main {
   border: 3px solid var(--primary-light);
   padding: 0.5rem;
   rotate: 10deg;
-  height: 400px;
+  max-width: 300px;
   transition: all 0.5s;
 }
 
@@ -109,8 +111,8 @@ main {
 /* Stats Section */
 .dtls {
   margin: 2rem auto;
-  width: 69%;
-  font-family: Arial, sans-serif;
+  width: 75%;
+  font-family: "Sora", serif;
   background-color: var(--stats-bg);
   color: var(--light);
   display: flex;
@@ -138,8 +140,11 @@ main {
 }
 
 /* Project Section */
+.project {
+  margin: 5rem;
+}
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--section-title);
 }
 
@@ -151,7 +156,7 @@ h2 {
 }
 
 .filter-btn {
-  background: var(--button-bg);
+  background: var(--primary-dark);
   color: var(--light);
   border: none;
   padding: 10px 20px;
@@ -162,7 +167,9 @@ h2 {
 
 .filter-btn.active,
 .filter-btn:hover {
-  background: var(--section-title);
+  background: var(--primary);
+  box-shadow: 2px 2px 12px var(--primary);
+  font-weight: 700;
 }
 
 .portfolio {
@@ -342,18 +349,20 @@ h2 {
 /* Contact Form */
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .contact-form {
   background-color: var(--contact-form-bg);
   padding: 30px;
   border-radius: 10px;
-  width: 60%;
+  width: 80%;
+  box-shadow: 1px 1px 12px var(--primary-dark);
 }
 
 .contact-form h2 {
@@ -407,33 +416,12 @@ h2 {
   transform: scale(1.05);
 }
 
-.contact-info {
-  width: 35%;
-}
-
-.contact-info div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.contact-info div span {
-  font-size: 20px;
-  color: var(--contact-icon);
-  margin-right: 10px;
-}
-
-.contact-info div p {
-  margin: 0;
-  color: var(--text-muted);
-}
-
 /* Footer Section */
 footer {
   margin-top: 2rem;
 }
 
-footer .container {
+footer > .container {
   border-radius: 12px 12px 0px 0px;
   background-color: var(--dark);
 }
@@ -453,7 +441,7 @@ footer .container {
   margin-bottom: 25px;
   font-size: 22px;
   position: relative;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Sora", serif;
 }
 
 .footer-col h4::before {
