@@ -6,7 +6,9 @@
   font-weight: 900;
   font-style: normal;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 body {
   background-color: var(--dark-bg);
   color: var(--light);
