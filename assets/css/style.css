@@ -270,6 +270,8 @@ header.header .navbar .logo .logo_text {
     line-height: 40px;
     font-family: "futurabook";
     letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
 }
 
 header.header .navbar .logo .logo_text:before {
@@ -2850,4 +2852,13 @@ header.header.headerFixed {
     word-spacing: .5rem;
     padding: 1rem;
     border-bottom: 3px dashed;
+}
+
+#logo_header {
+    /* width: 100px; */
+    height: 100px;
+    ;
+    border-radius: 50%;
+    padding: .5rem;
+    filter: drop-shadow(2px 2px 12px #fff);
 }
