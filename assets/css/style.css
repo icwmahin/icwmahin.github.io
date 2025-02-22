@@ -1,17 +1,3 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Md. Shahadat Hussain
-@URL: https://themeforest.net/user/droitthemes
-This file contains the styling for the actual tempalte, this is the file you need to edit to change the look of the tempalte.
----------------------------------------------------- */
-
-/*=====================================================================
-@Author: Md. Shahadat Hussain
-@Developed By: Masud Rana
-@Developer URL: https://themeforest.net/user/droitthemes
-@Default Styles
-/*----------------------------------------------------*/
-
 /*Base font*/
 html {
     scroll-behavior: smooth;
@@ -44,7 +30,7 @@ p {
 .pop {
     font-family: "Poppins", sans-serif;
 }
-
+    
 p {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
