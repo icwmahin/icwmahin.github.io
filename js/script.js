@@ -1,32 +1,20 @@
-// Toggle dark/light mode using Font Awesome icons
-const modeToggle = document.getElementById("modeToggle");
-modeToggle.addEventListener("click", () => {
-  // Toggle dark mode class on body
+// Dark/Light Mode Toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   document.body.classList.toggle("light-mode");
-  // Update the icon: if in dark mode show sun, else show moon
+
+  const icon = themeToggle.querySelector("i");
   if (document.body.classList.contains("dark-mode")) {
-    modeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
   } else {
-    modeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
   }
 });
 
-// Handle contact form submission
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-  if (name && email && message) {
-    alert(`Thank you, ${name}! Your message has been sent.`);
-    this.reset();
-  } else {
-    alert("Please fill in all fields.");
-  }
-});
-
-// Testimonials Slider (automatic)
+// Testimonials Slider
 const slides = document.querySelectorAll(".testimonial-slide");
 let currentSlide = 0;
 function showSlide(index) {
@@ -40,3 +28,21 @@ function nextSlide() {
 }
 showSlide(currentSlide);
 setInterval(nextSlide, 5000);
+
+// Contact Form Submission
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name && email && message) {
+      alert(`Thank you, ${name}! Your message has been sent.`);
+      contactForm.reset();
+    } else {
+      alert("Please fill in all fields.");
+    }
+  });
+}

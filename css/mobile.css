@@ -1,28 +1,30 @@
-@media (max-width: 768px) {
-  header {
+@media (max-width: 992px) {
+  .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  .section {
-    padding: 40px 5%;
+  .hero-text {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
-  #home {
+  .hero-image {
+    margin-top: 20px;
+  }
+  .skills-content {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
-  .home-text {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-  #skills .skills-content {
-    flex-direction: column;
-  }
-  #skills .slick-line {
+  .divider {
     display: none;
   }
-  #projects .project-container,
-  #education .education-container,
-  #contact .contact-container {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content {
     flex-direction: column;
   }
 }
