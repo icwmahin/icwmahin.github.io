@@ -2,64 +2,226 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Abdulla Al Mahin</title>
-
-    <!--HERE GOSE THE CDN'S -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulla Al Mahin | Portfolio</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!--HERE GOSE CUSTOME CSS -->
-
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/mobile.css" rel="stylesheet" />
-    <link href="css/root.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
-  <body>
-    <main id="top">
-      <!--HERO SECTION GOSE FROM HERE-->
-      <section id="hero-section">
-        <!--HERO SECTION LEFT SIDE GOSE FORM HERE -->
-        <div class="hero-left">
-          <h4 class="brif">About me</h4>
-          <h1 class="heading">I create Digital Future.</h1>
-          <p class="description">
-            Hello there i am abdulla i create stunning website with html css and
-            js the way you want and i will make each, have no idea where to
-            start and how to make the website how to build a brand here im
-          </p>
+  <body class="light-mode">
+    <!-- Header -->
+    <header>
+      <h1>Abdulla Al Mahin (icwmahin)</h1>
+      <button class="nav-toggle" id="modeToggle">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
 
-          <a href="linkedin.com/in/icwmahin">
-            <button type="button">
-              <i class="bx bxl-linkedin"></i>
-              learn More!
-            </button>
-          </a>
+    <!-- Hero Section -->
+    <section class="section" id="home">
+      <div class="home-text">
+        <h1>Welcome, I'm Abdulla Al Mahin</h1>
+        <p>
+          I’m an experienced web developer specializing in crafting bespoke
+          digital solutions. With expertise in WordPress, Elementor, HTML, CSS,
+          JavaScript, and cPanel, I build modern, responsive, and engaging
+          websites that help businesses succeed.
+        </p>
+        <button
+          class="cta-btn"
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+        >
+          Get in Touch
+        </button>
+      </div>
+      <div class="home-image">
+        <img src="assets/images/hero.jpg" alt="Hero Image" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="skills-header">
+        <p class="subtitle">My Expertise</p>
+        <h1>SKILLS</h1>
+      </div>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="skill-item">
+            <h3>Technical Skills</h3>
+            <p>JavaScript, HTML, CSS, React, GSAP</p>
+          </div>
+          <div class="skill-item">
+            <h3>Tools & Design</h3>
+            <p>Git, GitHub, Figma, UX/UI Design</p>
+          </div>
+          <div class="skill-item">
+            <h3>Soft Skills</h3>
+            <p>Problem Solving, Communication, Adaptability</p>
+          </div>
         </div>
-
-        <!--HERO SECTION RIGHT SIDE GOSE FORM HERE -->
-        <div class="hero-right">
-          <img src="assets/image/pfp.png" alt="pfp" />
+        <div class="slick-line"></div>
+        <div class="column right">
+          <div class="skill-item">
+            <h3>Backend</h3>
+            <p>Node.js, Express, MongoDB</p>
+          </div>
+          <div class="skill-item">
+            <h3>CMS Expertise</h3>
+            <p>WordPress, Elementor, cPanel</p>
+          </div>
+          <div class="skill-item">
+            <h3>Deployment</h3>
+            <p>Netlify, Vercel, Firebase</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--HERE THE RESUME SECTION GOSE HERE-->
-
-      <section id="resume-section">
-        <div class="hero-top">
-          <h4 class="brif">Know About Me More</h4>
-          <h1 class="heading">My Resume</h1>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Project Box 1 -->
+        <div class="project">
+          <img src="assets/images/project1.jpg" alt="Project 1" />
+          <div class="project-details">
+            <h3>Project One</h3>
+            <p>
+              A high-quality project demonstrating interactive and responsive
+              web solutions.
+            </p>
+            <a href="https://github.com/icwmahin/projects" target="_blank"
+              >View Project</a
+            >
+          </div>
         </div>
-        <div class="resume-bottom">
-          <div class="column-one"></div>
-          <div class="column-two"></div>
+        <!-- Project Box 2 -->
+        <div class="project">
+          <img src="assets/images/project2.jpg" alt="Project 2" />
+          <div class="project-details">
+            <h3>Project Two</h3>
+            <p>
+              A creative solution built with modern web technologies and refined
+              design.
+            </p>
+            <a href="https://github.com/icwmahin/projects" target="_blank"
+              >View Project</a
+            >
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- THE NEXT SECTION GOSE HERE  -->
-      <section class="skills"></section>
-    </main>
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="education-container">
+        <div class="edu-card">
+          <h3>BSc in Computer Science</h3>
+          <p>ABC University</p>
+          <p>Graduated with Honors</p>
+        </div>
+        <div class="edu-card">
+          <h3>High School Diploma</h3>
+          <p>Local High School</p>
+          <p>Top 10% of class</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide">
+          <blockquote>
+            "Abdulla delivered exceptional work. His skills and dedication
+            ensured our project was a huge success."
+          </blockquote>
+          <p class="testimonial-author">— Happy Client</p>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>
+            "Working with Abdulla was a pleasure. His creativity and
+            problem-solving skills are top-notch."
+          </blockquote>
+          <p class="testimonial-author">— Satisfied Customer</p>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>
+            "A true professional! Abdulla’s work exceeded our expectations and
+            brought our vision to life."
+          </blockquote>
+          <p class="testimonial-author">— Corporate Client</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7261878513557!2d90.39100321498297!3d23.780573184563224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b8e1c0a3c3%3A0x4a8b4e89d9f2b7c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1680012345678!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/icwmahin" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- No Footer Section as requested -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>
