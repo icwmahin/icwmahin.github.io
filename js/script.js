@@ -1,19 +1,3 @@
-// Dark/Light Mode Toggle
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  document.body.classList.toggle("light-mode");
-
-  const icon = themeToggle.querySelector("i");
-  if (document.body.classList.contains("dark-mode")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
-});
-
 // Testimonials Slider
 const slides = document.querySelectorAll(".testimonial-slide");
 let currentSlide = 0;
@@ -37,7 +21,6 @@ if (contactForm) {
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
-
     if (name && email && message) {
       alert(`Thank you, ${name}! Your message has been sent.`);
       contactForm.reset();

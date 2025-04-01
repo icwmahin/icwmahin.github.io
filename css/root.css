@@ -1,18 +1,14 @@
 :root {
-  /* Light Mode Variables */
-  --bg-color: #ffffff;
-  --text-color: #1f1f1f;
-  --primary-color: #37474f;
-  --accent-color: #3f8efc;
+  /* Dark Mode Colors */
+  --bg-color: #121212; /* Background */
+  --text-color: #e0e0e0; /* Primary text */
+  --primary-color: #90a4ae; /* For headings, logos, borders */
+  --accent-color: #4fc3f7; /* For links and accents */
+  --btn-bg: #90a4ae;
+  --btn-text: #ffffff;
   --border-radius: 2px;
   --container-width: 1200px;
   --heading-font: "Poppins", sans-serif;
-}
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  --bg-color: #1e1e1e;
-  --text-color: #e0e0e0;
 }
 
 body {
