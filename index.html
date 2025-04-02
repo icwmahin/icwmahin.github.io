@@ -1,239 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META TAG HERE -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdulla Al Mahin - Portfolio</title>
-    <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- CDN LINK GOSE HERE  -->
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome for Icons -->
+    <!-- boxicons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/root.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
+    <!-- font-awesome cdn -->
+
+    <!-- CUSTOM CSS LINK GOSE HERE -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- WEBSITE TITLE HERE  -->
+    <title>Abdulla Al Mahin</title>
   </head>
   <body>
-    <!-- Header (Not Sticky) -->
-    <!-- <header class="header">
-      <div class="container header-inner">
-        <div class="logo">Abdulla Al Mahin</div>
+    <header class="header">
+      <div class="container nav-container">
+        <div class="nav-logo">Abdulla Al Mahin</div>
+        <button class="nav-toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav" id="nav">
+          <ul>
+            <li>
+              <a href="#about"> <i class="bx bx-code"></i> About </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa-solid fa-terminal"></i> Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <i class="fa-brands fa-github"></i> Projects
+              </a>
+            </li>
+            <li>
+              <a href="#testimonials">
+                <i class="bx bx-shield"></i> Testimonials
+              </a>
+            </li>
+            <li>
+              <a href="#contact"> <i class="bx bxs-user"></i> Contact </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header> -->
+    </header>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO SECTION ===== -->
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Hi, I'm <span>Abdulla Al Mahin</span></h1>
-          <p>
-            I’m an experienced web developer crafting bespoke digital solutions.
-            With expertise in WordPress, Elementor, HTML, CSS, JavaScript, and
-            cPanel, I build modern, responsive, and engaging websites to help
-            businesses succeed.
+      <div class="container">
+        <h1>
+          <span id="gar1"> Hi, I'm </span>
+          <span id="gar2"> Abdulla </span>
+        </h1>
+        <h2 id="hero-subhead">Developer & Security</h2>
+        <p id="hero-description">
+          Building secure and innovative solutions one line of code at a time.
+          Passionate about clean code, cybersecurity, and open source.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <!-- Left Column: About Text -->
+        <div class="about-left">
+          <h2 class="about-subtitle">/ about</h2>
+          <h3 class="about-title">Developer &amp; Cybersecurity Enthusiast</h3>
+          <p class="about-text">
+            I'm a passionate developer with expertise in web development and a
+            deep interest in cybersecurity. With over 5 years of experience
+            building modern applications using React.js, Node.js, and various
+            backend technologies, I consistently deliver robust and secure
+            solutions.
           </p>
-          <div class="hero-social">
-            <a href="https://github.com/icwmahin" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://linkedin.com/in/icwmahin" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://twitter.com/icwmahin" target="_blank"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-          </div>
+          <p class="about-text">
+            My journey in ethical hacking and security research has equipped me
+            with a unique perspective on creating applications that are not just
+            functional but also secure by design. I believe in the power of
+            technology to solve real-world problems while maintaining the
+            highest standards of security and privacy.
+          </p>
+          <p class="about-text">
+            When I'm not coding, you can find me participating in CTF
+            competitions, contributing to open-source projects, or exploring the
+            latest developments in both the development and cybersecurity
+            landscapes.
+          </p>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/hero.jpg" alt="Hero Image" />
-        </div>
-      </div>
-      <div class="custom-shape-divider-bottom">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-            d="M321.39,56.71C230.83,65,146.11,81.17,64,94.16C21.33,100.67,0,104.85,0,104.85V120H1200V0C1011.79,79.49,732.21,43.21,321.39,56.71Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2>SKILLS</h2>
-        <div class="skills-content">
-          <div class="column">
-            <div class="skill-box">
-              <h3>Web Development</h3>
-              <p>HTML, CSS, JavaScript, React, GSAP</p>
+        <!-- Right Column: Feature Boxes -->
+        <div class="about-right">
+          <div class="about-features">
+            <!-- Feature Box 1 -->
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Clean Code</h4>
+              <p>Writing maintainable, efficient, and elegant solutions.</p>
             </div>
-            <div class="skill-box">
-              <h3>Design</h3>
-              <p>Figma, Adobe XD, UI/UX</p>
-            </div>
-            <div class="skill-box">
-              <h3>Animations</h3>
-              <p>GSAP, Framer Motion</p>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="column">
-            <div class="skill-box">
-              <h3>CMS</h3>
-              <p>WordPress, Elementor, cPanel</p>
-            </div>
-            <div class="skill-box">
-              <h3>Backend</h3>
-              <p>Node.js, Express, MongoDB</p>
-            </div>
-            <div class="skill-box">
-              <h3>Deployment</h3>
-              <p>Netlify, Vercel, Firebase</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <p class="section-subtitle">Showcasing my innovative work</p>
-        <div class="project-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/project1.jpg" alt="Project 1" />
+            <!-- Feature Box 2 -->
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Security First</h4>
+              <p>Integrating security best practices from the ground up.</p>
             </div>
-            <div class="project-info">
-              <h3>Project One</h3>
+
+            <!-- Feature Box 3 -->
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h4>Open Source</h4>
+              <p>Contributing to and advocating for open source.</p>
+            </div>
+
+            <!-- Feature Box 4 -->
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovation</h4>
               <p>
-                A cutting-edge solution that redefines modern web experiences.
+                Constantly learning and experimenting with new technologies.
               </p>
-              <a href="https://github.com/icwmahin/projects" target="_blank"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/project2.jpg" alt="Project 2" />
-            </div>
-            <div class="project-info">
-              <h3>Project Two</h3>
-              <p>
-                A creative digital solution focused on performance and design.
-              </p>
-              <a href="https://github.com/icwmahin/projects" target="_blank"
-                >View Project</a
-              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <div class="container">
-        <h2>Education</h2>
-        <p class="section-subtitle">My formal background</p>
-        <div class="education-cards">
-          <div class="edu-card">
-            <h3>BSc in Computer Science</h3>
-            <p>XYZ University</p>
-            <p>Graduated with Honors</p>
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills-section" id="skills">
+      <div class="container skills-container">
+        <!-- Subtitle -->
+        <h2 class="skills-subtitle">/ skills</h2>
+
+        <!-- Description -->
+        <p class="skills-description">
+          A comprehensive set of technical skills I’ve acquired and honed
+          throughout my career. From front-end technologies to cybersecurity
+          tools, I’m constantly expanding my expertise.
+        </p>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Skill Box 1 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-code skill-icon"></i>
+              Programming Languages
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                JavaScript
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                TypeScript
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Python
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Rust
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Bash
+              </li>
+            </ul>
           </div>
-          <div class="edu-card">
-            <h3>High School Diploma</h3>
-            <p>Local High School</p>
-            <p>Top 10% of class</p>
+
+          <!-- Skill Box 2 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-globe skill-icon"></i>
+              Web Technologies
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                React.js
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Next.js
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Node.js
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                HTML5 / CSS3
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Tailwind CSS
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Box 3 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-server skill-icon"></i>
+              Backend Development
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Express.js
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Nest.js
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                RESTful APIs
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                GraphQL
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Box 4 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-database skill-icon"></i>
+              Database Technologies
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                MongoDB
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                PostgreSQL
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                MySQL
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Redis
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Prisma ORM
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Box 5 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-tools skill-icon"></i>
+              DevOps &amp; Tools
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Docker
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                CI/CD
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                AWS
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Linux
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Neovim
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Box 6 -->
+          <div class="skill-box">
+            <h3>
+              <i class="fas fa-shield-alt skill-icon"></i>
+              Cybersecurity
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Penetration Testing
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                Web Security
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                CTF Challenges
+              </li>
+              <li>
+                <i class="fa-solid fa-terminal"></i>
+                OWASP Top 10
+              </li>
+            </ul>
           </div>
         </div>
+        <!-- End .skills-grid -->
       </div>
+      <!-- End .skills-container -->
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <h2>Testimonials</h2>
-        <p class="section-subtitle">What clients say about my work</p>
-        <div class="testimonial-slider">
-          <div class="testimonial-slide">
-            <blockquote>
-              <span class="quote-mark">“</span>
-              Abdulla delivered exceptional work. His skills and dedication
-              ensured our project was a huge success.
-              <span class="quote-mark">”</span>
-            </blockquote>
-            <p class="testimonial-author">— Happy Client</p>
+    <!-- ===== LEARNING SECTTION ===== -->
+
+    <section class="learning-section">
+      <div class="learning-container">
+        <!-- Title -->
+        <h2 class="learning-title">
+          <i class="fa-solid fa-microchip"></i>
+          Currently Learning:
+        </h2>
+
+        <div class="learning-grid">
+          <!-- Card 1 -->
+          <div class="learning-card">
+            <div class="learning-header">
+              <h3>Web3 Development</h3>
+              <span class="status-pill">in progress</span>
+            </div>
+            <p class="learning-subtitle">
+              Smart contracts and decentralized apps
+            </p>
+
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Since Jan 2023</span>
+              <span>60% complete</span>
+            </div>
           </div>
-          <div class="testimonial-slide">
-            <blockquote>
-              <span class="quote-mark">“</span>
-              Working with Abdulla was a pleasure. His creativity and
-              problem-solving skills are top-notch.
-              <span class="quote-mark">”</span>
-            </blockquote>
-            <p class="testimonial-author">— Satisfied Customer</p>
+
+          <!-- Card 2 -->
+          <div class="learning-card">
+            <div class="learning-header">
+              <h3>Malware Analysis</h3>
+              <span class="status-pill">in progress</span>
+            </div>
+            <p class="learning-subtitle">
+              Reverse engineering and sandbox environments
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 45%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Since Mar 2023</span>
+              <span>45% complete</span>
+            </div>
           </div>
-          <div class="testimonial-slide">
-            <blockquote>
-              <span class="quote-mark">“</span>
-              A true professional! Abdulla’s work exceeded our expectations and
-              brought our vision to life.
-              <span class="quote-mark">”</span>
-            </blockquote>
-            <p class="testimonial-author">— Corporate Client</p>
+
+          <!-- Card 3 -->
+          <div class="learning-card">
+            <div class="learning-header">
+              <h3>Advanced Encryption</h3>
+              <span class="status-pill">in progress</span>
+            </div>
+            <p class="learning-subtitle">
+              Post-quantum cryptography techniques
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Since Nov 2022</span>
+              <span>70% complete</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="learning-card">
+            <div class="learning-header">
+              <h3>AI Security</h3>
+              <span class="status-pill">in progress</span>
+            </div>
+            <p class="learning-subtitle">
+              Protecting ML systems from adversarial attacks
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 30%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Since Apr 2023</span>
+              <span>30% complete</span>
+            </div>
           </div>
         </div>
+        <!-- .learning-grid -->
       </div>
+      <!-- .learning-container -->
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p class="section-subtitle">Let’s create something amazing together</p>
-        <div class="contact-content">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7261878513557!2d90.39100321498297!3d23.780573184563224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b8e1c0a3c3%3A0x4a8b4e89d9f2b7c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1680012345678!5m2!1sen!2sus"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <div class="contact-form">
-            <form id="contactForm">
-              <input type="text" id="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects-section" id="projects">
+      <div class="projects-container">
+        <!-- Title & Description -->
+        <h2 class="projects-title">/ projects</h2>
+        <p class="projects-desc">
+          A selection of projects that showcase my skills and interests in web
+          development, cybersecurity, and software engineering.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-category="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-category="webdev">
+            Web Development
+          </button>
+          <button class="filter-btn" data-category="cybersecurity">
+            Cybersecurity
+          </button>
+          <button class="filter-btn" data-category="tools">
+            Tools & Utilities
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Card 1 -->
+          <div class="project-card" data-cat="cybersecurity">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
               />
-              <textarea
-                id="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <button type="submit">Send Message</button>
-            </form>
+              <span class="corner-label security">security</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">SecureChat Messenger</h3>
+              <p class="card-desc">
+                End-to-end encrypted messaging with real-time communication.
+              </p>
+              <div class="card-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Encryption</span>
+                <span>Websockets</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card" data-cat="webdev">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
+              />
+              <span class="corner-label analytics">analytics</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">DevHub Portfolio</h3>
+              <p class="card-desc">
+                Customizable portfolio template for developers with code metrics
+                and analytics.
+              </p>
+              <div class="card-tags">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card" data-cat="cybersecurity">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
+              />
+              <span class="corner-label security">security</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Vulnerability Scanner</h3>
+              <p class="card-desc">
+                Automated scans for known vulnerabilities in servers and
+                applications.
+              </p>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>AWS</span>
+                <span>CLI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="project-card" data-cat="webdev">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Task Flow</h3>
+              <p class="card-desc">
+                A productivity app with Kanban boards, time tracking, and team
+                collaboration.
+              </p>
+              <div class="card-tags">
+                <span>React</span>
+                <span>Redux</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="project-card" data-cat="tools">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Linux Config Manager</h3>
+              <p class="card-desc">
+                A tool to manage and backup Linux configurations for various
+                distros.
+              </p>
+              <div class="card-tags">
+                <span>Node.js</span>
+                <span>Linux</span>
+                <span>Configuration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="project-card" data-cat="cybersecurity tools">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Project Image"
+              />
+              <span class="corner-label security">security</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">API Security Gateway</h3>
+              <p class="card-desc">
+                Protects internal APIs from malicious traffic with token-based
+                authentication.
+              </p>
+              <div class="card-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>JWT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .projects-grid -->
+      </div>
+      <!-- .projects-container -->
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonial-section" id="testimonials">
+      <div class="testimonial-container">
+        <!-- Section Title -->
+        <h2 class="testimonial-title">/ testimonials</h2>
+        <!-- Section Subtitle -->
+        <p class="testimonial-subtitle">
+          What colleagues and clients have to say about my work and
+          collaboration.
+        </p>
+
+        <!-- Slider Container -->
+        <div class="slider-wrapper">
+          <div class="testimonial-slider" id="testimonial-slider">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                "Abdulla's development and security expertise is truly
+                remarkable. His innovative solutions and attention to detail
+                make him stand out."
+              </p>
+              <div class="author-info">
+                <h4 class="author-name">Sarah Johnson</h4>
+                <p class="author-position">Tech Lead at InnovateTech</p>
+              </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                "Working with Abdulla was an amazing experience. His deep
+                understanding of cybersecurity helped our project achieve new
+                levels of reliability."
+              </p>
+              <div class="author-info">
+                <h4 class="author-name">John Doe</h4>
+                <p class="author-position">CEO, CyberSecure Inc.</p>
+              </div>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                "Abdulla consistently delivers exceptional results. His
+                expertise in both development and cybersecurity has greatly
+                improved our product."
+              </p>
+              <div class="author-info">
+                <h4 class="author-name">Jane Smith</h4>
+                <p class="author-position">CTO, SecureApps</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact-form">
+        <h2 class="section-title">Contact</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2025 Abdulla Al Mahin. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ===== CUSTOM JAVASCRIPT CODE GOSE HERE ===== -->
+    <script src="script.js"></script>
   </body>
 </html>
