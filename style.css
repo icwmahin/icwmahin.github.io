@@ -185,14 +185,35 @@ li > i {
 /* ===== HERO SECTION ===== */
 .hero {
   text-align: center;
-  padding: 4rem 0;
-  height: 95svh;
+  /* padding: 4rem 0; */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+
+  /* Background image with opacity */
+  background-image: url("cool-background.png");
+  background-size: cover;
+  /* Ensures the image covers the entire section */
+  background-position: center; /* Keeps the image centered */
+  position: relative; /* For layering the background */
+  backdrop-filter: blur(20px);
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000006b; /* Adjust opacity as needed */
+  z-index: -1; /* Ensures the overlay is behind the content */
+}
+
 .hero p {
   max-width: 600px;
   margin: 0.5rem auto 2rem;
@@ -207,13 +228,14 @@ li > i {
 .btn {
   background-color: #23b9ff;
   color: #0f141e;
-  padding: 0.75rem 1.5rem;
+  padding: 10px 20px;
   border-radius: 24px;
   font-weight: 600;
   transition: 0.3s;
 }
 .btn:hover {
   background-color: #59d7ff;
+  color: #000;
 }
 
 /* ===== RESPONSIVE NAVIGATION ===== */
