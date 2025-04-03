@@ -636,6 +636,7 @@ li > i {
 /* Filter Buttons */
 .projects-filter {
   margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .filter-btn {
   background-color: transparent;
@@ -777,11 +778,12 @@ li > i {
 }
 
 /* Title & Subtitle */
-.testimonial-title {
-  font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  text-transform: lowercase;
+.testimonial-title,
+#testimonial {
+  font-size: 2rem;
+  color: #1cade6;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 .testimonial-subtitle {
   font-size: 1rem;
