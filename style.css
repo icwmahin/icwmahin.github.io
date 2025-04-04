@@ -197,12 +197,12 @@ li > i {
   padding-bottom: 2rem;
 
   /* Background image with opacity */
-  background-image: url("cool-background.png");
+  background-image: url("images/bg.jpg");
   background-size: cover;
   /* Ensures the image covers the entire section */
   background-position: center; /* Keeps the image centered */
   position: relative; /* For layering the background */
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
 }
 
 .hero::before {
@@ -212,8 +212,8 @@ li > i {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0000006b; /* Adjust opacity as needed */
-  z-index: -1; /* Ensures the overlay is behind the content */
+  background-color: #0107148f;
+  z-index: -1;
 }
 
 .hero p {
