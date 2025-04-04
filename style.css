@@ -113,14 +113,16 @@ img {
 }
 .nav li a {
   text-decoration: none;
-  color: #23b9ff;
+  color: #fff;
   font-weight: 500;
   transition: color 0.3s;
 }
+
 .nav li a:hover {
   color: #59d7ff;
 }
 a i {
+  color: #4af626;
   margin-right: 0.4rem;
 }
 li > i {
@@ -909,10 +911,10 @@ li > i {
 
 /* Title & Subtitle */
 .contact-title {
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 2rem;
+  color: #23b9ff;
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
-  text-transform: lowercase;
 }
 .contact-subtitle {
   font-size: 1rem;
@@ -1007,15 +1009,21 @@ li > i {
 }
 .follow-me-icons {
   display: flex;
+  justify-content: center;
+  align-items: cen;
   gap: 1rem;
 }
-.follow-me-icons a {
-  color: #d2d2d2;
-  font-size: 1.4rem;
-  transition: color 0.3s;
+.follow-me-icons a i {
+  color: #09b4d5;
+  border: 2px solid #09b4d5;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s;
 }
-.follow-me-icons a:hover {
-  color: #23b9ff;
+
+.follow-me-icons a i:hover {
+  border: 2px solid #1cade6;
+  scale: 1.1;
 }
 
 /* RESPONSIVE DESIGN */
