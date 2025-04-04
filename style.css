@@ -909,12 +909,12 @@ li > i {
   margin: 0 auto;
 }
 
-/* Title & Subtitle */
+/* (Optional) Title & Subtitle */
 .contact-title {
   font-size: 2rem;
-  color: #23b9ff;
+  color: #1cade6;
+  margin-bottom: 1rem;
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
 }
 .contact-subtitle {
   font-size: 1rem;
@@ -925,31 +925,38 @@ li > i {
   opacity: 0.9;
 }
 
-/* Contact Grid: Two Columns */
+/* ===== CONTACT GRID ===== */
+/* Since the contact form is removed, the grid now only contains the right column */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
-  text-align: left;
-  justify-items: center;
+  grid-template-columns: 1fr; /* Full width for contact-right */
+  gap: 2rem;
 }
 
-/* Right Column: Contact Information & Follow Me */
+/* ===== RIGHT COLUMN: TWO Boxes ===== */
 .contact-right {
   display: flex;
-  align-items: center;
+  flex-direction: row; /* Side by side on larger screens */
   gap: 2rem;
-  height: 100%;
   width: 100%;
 }
 
-/* Contact Info Box */
-.contact-info-box {
+/* Each Box: common styles */
+.contact-info-box,
+.follow-box {
   background-color: #192235;
   border: 1px solid #1f2a3a;
   border-radius: 8px;
   padding: 2rem;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Contact Info Box */
 .contact-info-title {
   font-size: 1.3rem;
   color: #ffffff;
@@ -976,6 +983,8 @@ li > i {
 .info-text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 .info-label {
   font-size: 0.85rem;
@@ -986,21 +995,14 @@ li > i {
 .info-value {
   font-size: 0.95rem;
   color: #d2d2d2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.info-value:hover {
+  color: #23b9ff;
 }
 
-/* Follow Me Box */
-.follow-box {
-  background-color: #192235;
-  border: 1px solid #1f2a3a;
-  border-radius: 8px;
-  padding: 2rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* Follow Box */
 .follow-me-title {
   font-size: 1.2rem;
   color: #ffffff;
@@ -1009,9 +1011,9 @@ li > i {
 }
 .follow-me-icons {
   display: flex;
-  justify-content: center;
-  align-items: cen;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .follow-me-icons a i {
   color: #09b4d5;
@@ -1019,17 +1021,27 @@ li > i {
   padding: 1rem;
   border-radius: 50%;
   transition: all 0.3s;
+  font-size: 1.2rem;
 }
-
 .follow-me-icons a i:hover {
   border: 2px solid #1cade6;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* On screens smaller than 1024px, stack the boxes in a column */
+@media (max-width: 1024px) {
+  .contact-right {
+    flex-direction: column;
+  }
+}
+
+/* On screens smaller than 600px, adjust padding & font sizes if needed */
+@media (max-width: 600px) {
+  .contact-info-box,
+  .follow-box {
+    padding: 1.5rem;
   }
 }
 /* ===== FOOTER ===== */
